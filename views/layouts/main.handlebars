@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burgers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-images">
+            <img src="assets/img/leaf.png" class="leaf-icon" alt="Leaf"><img src="assets/img/hamburger.png"
+                class="burger-icon" alt="Veggie Burger"><img src="assets/img/leaf.png" class="leaf-icon" alt="Leaf">
+
+        </div>
+        <h1>Eat Our Friendly Veggie "Burger"</h1>
+                <form class="create-form">
+                                   <label for="new_burger">
+                    What Kind of "Burger" would you like ?
+                </label>
+            <div class="form-group">
+ 
+                <input type="text" id="new_burger" name="burger_name">
+                <button type="submit">Add "Burger"</button>
+            </div>
+       
+        </form>
+        {{{ body }}}
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('button').on('click', function (event) {
+                event.preventDefault();
+                var burgerName = $('#new_burger').val().trim();
+                console.log(burgerName);
+                $.post("/index", {burgerName}, function (data, status) {
+                    
+                });
+                location.reload();
+            });
+        });
+    </script>
+</body>
+
+</html>

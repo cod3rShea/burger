@@ -1,0 +1,104 @@
+/* 
+Olivish green: #4E4E26
+Redish: #E52900
+mustardish: #D2A545
+#DAC29C
+#5C9A63 */
+
+h1 {
+    color: #DAC29C;
+    text-align: center;
+}
+
+body {
+    background: #4E4E26;
+}
+
+.container {
+    max-width: 1920px;
+}
+
+/* home header images */
+.header-images {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+img.leaf-icon:first-child {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+img.leaf-icon {
+    max-width: 50px;
+}
+
+img.burger-icon {
+    max-width: 120px;
+}
+
+
+form.create-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group button {
+    background-color: #5C9A63;
+    color: #fff;
+    font-size: 20px;
+    border-color: #5C9A63;
+}
+
+.form-group button:active {
+    background-color: #fff;
+    font-size: 20px;
+    color: #5C9A63;
+}
+
+
+.form-group input {
+    padding: 10px;
+    max-width: 250px;
+}
+
+.burger-continer {
+    display: flex;
+}
+
+
+
+
+.uneaten-burger,
+.eaten-burger {
+    width: 46%;
+}
+
+.uneaten-burger {
+    margin-right: 2%;
+}
+.eaten-burger {
+    margin-left: 2%;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: #D2A545;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 700;
+}

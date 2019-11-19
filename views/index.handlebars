@@ -1,0 +1,18 @@
+<div class="burger-continer">
+    <div class="uneaten-burger">
+        <ul>
+            {{#each burger}}
+            
+                <li>{{this.burger_name}} 
+                    <a href="#" value={{this.burger_name}}>Devour</a>
+                </li>
+             
+            {{/each}}
+        </ul>
+    </div>
+    <div class="eaten-burger">
+        <ul>
+
+        </ul>
+    </div>
+</div>
